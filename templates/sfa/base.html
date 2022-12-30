@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SFA | {% block title %}{% endblock title %}</title>
+        <link rel="stylesheet"  href="{% static 'sfa/css/bootstrap.min.css' %}">
+
+    <link  href="{% static 'sfa/css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    {% include 'sfa/headers/index.html' %}
+    {% block content %}
+        
+    {% endblock content %}
+    
+  
+    <footer>
+        {% include 'sfa/footers/index.html' %}
+    </footer>
+        
+        
+    <script src="{% static 'sfa/js/popper.js'%}"></script>
+    <script src="{% static 'sfa/js/bootstrap.bundle.min.js'%}"></script>
+  </body>
+</html>
