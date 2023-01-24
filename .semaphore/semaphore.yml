@@ -9,5 +9,16 @@ blocks:
     task:
       jobs:
         - name: 'Job #1'
+          commands: []
+  - name: Tests
+    task:
+      prologue:
+        commands:
+          - checkout
+      jobs:
+        - name: Unit Tests
           commands:
-            - checkout
+            - echo 'running unit tests'
+        - name: Integration Tests
+          commands:
+            - echo 'running integration tests'
