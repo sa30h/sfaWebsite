@@ -68,6 +68,9 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+      li{
+        color:#000066
+      }
     </style>
 
     
@@ -140,36 +143,39 @@
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-0 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
         {% comment %} <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> {% endcomment %}
-        <img src= {% static 'sfa/img/sfalogo.png' %} width="100" alt="sfalogo" />
+        <img src= {% static 'sfa/img/sfalogo.png' %} width="80" alt="sfalogo" />
       </a> 
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
        <li> <a href={% url 'home' %} class="nav-link text-dark">
-          <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-          Home
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24" color="#000066"><use xlink:href="#home"/></svg>
+          
+          <span style="color:#000066">Home</span> 
         </a>  
       </li>
             <li>
               <a href= {% url 'about' %} class="nav-link text-dark ">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                About
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24" color="#000066"><use xlink:href="#speedometer2"/></svg>
+                
+                <span style="color:#000066">About</span> 
               </a>
             </li>
             <li>
               <a href= {% url 'gallery' %} class="nav-link text-dark ">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-                Enroll
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24" color="#000066"><use xlink:href="#table"/></svg>
+                
+                <span style="color:#000066">Enroll</span> 
               </a>
             </li>
             <li>
-              <a href= {% url 'gallery' %} class="nav-link text-dark">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                Gallery
+              <a href= {% url 'gallery' %} class="nav-link text-dark" >
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24" color="#000066"><use xlink:href="#grid"/></svg>
+               <span style="color:#000066">Gallery</span> 
               </a>
             </li>
             {% comment %} <li>
               <a href="#" class="nav-link text-dark">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24" color="#000066"><use xlink:href="#people-circle"/></svg>
                 Customers
               </a>
             </li> {% endcomment %}
